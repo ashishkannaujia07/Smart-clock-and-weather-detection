@@ -1,0 +1,24 @@
+Hardware Connections
+DS3231 RTC Module:
+
+SDA -> GPIO21 (default SDA on ESP32)
+SCL -> GPIO22 (default SCL on ESP32)
+VCC -> 3.3V
+GND -> GND
+DHT22 Sensor:
+
+Data Pin -> GPIO15 (can be any GPIO)
+VCC -> 3.3V
+GND -> GND
+16x2 LCD with I2C Interface:
+
+SDA -> GPIO21 (same SDA line as RTC)
+SCL -> GPIO22 (same SCL line as RTC)
+VCC -> 3.3V
+GND -> GND
+Libraries Required
+1.RTClib for the DS3231 module
+2.DHT sensor library for the DHT22 sensor
+3.LiquidCrystal_I2C for the 16x2 I2C LCD display
+
+You can install these libraries from the Arduino Library Manager.
